@@ -24,6 +24,19 @@ export class AnuncioComponent {
     })
   }
 
+  ngOnInit(): void {
+    this.loadAnuncio();
+  }
+
+  loadAnuncio(){
+      this.AnuncioService.getAnuncios().subscribe(
+        {
+            next:  data =>  this.anuncio = data,
+            error: msg  => console.log("Erro ao chamar o endpont " + msg)
+        }
+      )
+  }
+
   Save(){
 
     this.AnuncioService.save(this.formGroupAnuncio.value).subscribe(
@@ -33,6 +46,7 @@ export class AnuncioComponent {
         }
       }
     )
+    this.loadAnuncio();
     }
 
 

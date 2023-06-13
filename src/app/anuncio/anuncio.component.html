@@ -27,6 +27,19 @@
     <button class="btn btn-primary" (click)="Save()">Salvar</button>
   </div>
 </form>
+
+<div class="container text-center row position-absolute " >
+  <div class="col" *ngFor="let anuncio of anuncio">
+   <div class="card " style="width: 18rem;">
+     <h5 class="card-title ">{{anuncio.anunciante}}</h5>
+     <img src={{anuncio.url}} class="card-img-top" id="img" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">{{anuncio.tipo}}</h5>
+       <p class="card-text">R$:{{anuncio.preco}}
+       </p>
+     </div>
+  </div>
+ </div>
   </div>
 </div>
 
