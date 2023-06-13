@@ -1,0 +1,11 @@
+{
+  "anuncio": [
+    {
+      "id": 1,
+      "url": "https://i.ytimg.com/vi/qZX2mfbdtZc/maxresdefault.jpg",
+      "tipo": "tv",
+      "anunciante": "Americanas",
+      "preco": 1345.5
+    }
+  ]
+}
