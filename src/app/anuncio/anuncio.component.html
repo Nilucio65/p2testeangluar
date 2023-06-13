@@ -1,2 +1,33 @@
-<p>anuncio works!</p>
+<div class="row">
+  <div class="col-8 m-auto">
+<form [formGroup]="formGroupAnuncio">
+
+  <div class="mb-3">
+    <label for="anunciante" class="form-label">Anunciante:</label>
+    <input type="email" formControlName="anunciante" class="form-control" id="anunciante" placeholder="anunciante">
+  </div>
+
+  <div class="mb-3">
+    <label for="tipo" class="form-label">Tipo do produto:</label>
+    <input type="email" formControlName="tipo" class="form-control" id="tipo" placeholder="TV">
+  </div>
+
+  <div class="mb-3">
+    <label for="preco" class="form-label">Preço:</label>
+    <input type="email" formControlName="preco" class="form-control" id="preco" placeholder="1445.7">
+  </div>
+
+  <div class="mb-3">
+    <label for="url" class="form-label">URL da Imagem:</label>
+    <input type="email" formControlName="url" class="form-control" id="url" placeholder="link">
+  </div>
+
+
+  <div class="mb-3 d-flex justify-content-end">
+    <button class="btn btn-primary" (click)="Save()">Salvar</button>
+  </div>
+</form>
+  </div>
+</div>
+
 
